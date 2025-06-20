@@ -37,7 +37,7 @@
   <div id="ui">
     <p>スマホを傾けて <span style="color:blue">青いボール</span> を
       <span style="color:red">赤いゴール</span> に導こう。<br>
-      制限時間 <b id="time">45</b> 秒内にできるだけ多くのゴールを目指せ！<br>
+      制限時間 <b id="time">60</b> 秒内にできるだけ多くのゴールを目指せ！<br>
       障害物に当たると <span style="color:red">-1 秒</span> ペナルティ。</p>
     <button id="startBtn">スタート</button>
     <div>スコア: <span id="score">0</span> ／ ハイスコア: <span id="best">0</span></div>
@@ -60,7 +60,7 @@
     const goal = { x: 260, y: 60, r: 18 };
     let obstacles = [], tilt = { beta: 0, gamma: 0 };
     const OBSTACLE_COUNT = 4;
-    let playing = false, timer = 45, score = 0, frameId;
+    let playing = false, timer = 60, score = 0, frameId;
 
     function resetObstacles() {
       obstacles = [];
