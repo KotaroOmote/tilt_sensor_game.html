@@ -11,11 +11,10 @@
     button:disabled{ background:#aaa; }
     textarea.code { width:90%; height:480px; margin:20px auto; display:block; font-family:monospace; white-space: pre; overflow: auto; }
     #time {
-    font-size: 28px;
-    font-weight: bold;
-    color: #d60000;
-  }
-     
+      font-size: 28px;
+      font-weight: bold;
+      color: #d60000;
+    }
   </style>
 </head>
 <body>
@@ -138,7 +137,7 @@
     }
 
     function actuallyStart() {
-      playing = true; timer = 45; score = 0;
+      playing = true; timer = 60; score = 0;
       scoreEl.textContent = score; timeEl.textContent = timer;
       resetBall(); randomGoal(); resetObstacles();
       window.addEventListener("deviceorientation", orientationHandler, true);
